@@ -79,23 +79,27 @@ $('.women-btn').click(function () {
   $('.question').click(function () {
     let isActive = $(this).hasClass('active');
     $('.question').removeClass('active');
-    $('.answer').removeClass('active').slideUp(300);
+    $('.answer').removeClass('active').slideUp(400);
    if (!isActive) {
       $(this).addClass('active');
-      $(this).next('.answer').addClass('active').slideDown(300);
+      $(this).next('.answer').addClass('active').slideDown(400);
     }
   });
+//   $('.question').click(function () {
+//     let $this = $(this);
+//     let isActive = $this.hasClass('active');
 
-  // $('.question').click(function(){
-  //   $(this).toggleClass('active');
-  //   $(this).siblings('.answer').slideDown(300);
-  //   if ($('.question').hasClass(active)) {
-  //     $(this).removeClass('active');
-  //     $(this).siblings('.answer').slideUp(300);
-      
-  //   }
+//     $('.question').removeClass('active');
+//     $('.answer').removeClass('active').stop(true, true).slideUp(200);
 
-  // });
+//     if (!isActive) {
+//         $this.addClass('active');
+//         $this.next('.answer').addClass('active').stop(true, true).slideDown(200);
+//     }
+// });
+
+
+
 
 
   // form

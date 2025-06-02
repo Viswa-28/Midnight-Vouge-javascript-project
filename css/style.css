@@ -435,6 +435,7 @@ body{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 200px;
 }
 
 .accordian-item {
@@ -450,8 +451,8 @@ body{
   padding: 15px;
   background-color: #f3f3f3;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  transition-duration: 0.5s;
+  /* transition: background-color 0.3s ease; */
+  /* transition-duration: 2s; */
 
 }
 
@@ -470,19 +471,20 @@ body{
   overflow: hidden;
   background-color: #f9f9f9;
   padding: 0 15px;
-  transition-duration: 0.5s;
-  transition: all 2s ease;
+  /* transition-duration: 2s; */
+  
 
 }
 
 .answer.active {
   max-height: 400px; 
   padding: 15px;
+  animation: backwards;
  
 }
 
 .question i {
-  transition: transform 0.3s ease;
+  transition: transform 0.8s ease;
 }
 
 .question.active i {
