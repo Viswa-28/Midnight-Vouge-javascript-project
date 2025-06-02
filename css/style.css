@@ -69,12 +69,23 @@ body{
 /* Header */
 .nav {
   display: flex;
+  position:fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  /* right: 0; */
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px 0;
   height: 80px;
   width: 100%;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.411);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
 }
 .nav h2{
   /* margin-left: 120px; */
@@ -167,7 +178,7 @@ body{
   align-items: center;
   text-align: center;
   /* padding: 100px 20px; */
-  margin-top: 50px;
+  margin-top: 150px;
 
   background-color: black;
 }
@@ -347,6 +358,7 @@ body{
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
+      /* transform:rotateX('-45deg'); */
     }
     .men-card.active{
       display: flex!important;
@@ -355,6 +367,8 @@ body{
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px; 
+      transition: all 3s ease;
+      /* transform: rotate3d(1, 1, 1, 45deg); */
       /* opacity: 1!important; */
     
     }
@@ -365,6 +379,7 @@ body{
       justify-content: center;
       gap: 20px;
       opacity: 1;
+       transform:rotateX('-45deg');
 
     }
    .third .card {
@@ -454,16 +469,16 @@ body{
   max-height: 0;
   overflow: hidden;
   background-color: #f9f9f9;
-  transition: max-height 0.4s ease, padding 0.4s ease;
   padding: 0 15px;
-  /* transition-duration: 0.5s; */
-  transition: all 0.5s ease;
+  transition-duration: 0.5s;
+  transition: all 2s ease;
+
 }
 
 .answer.active {
-  max-height: 300px; /* adjust as needed */
+  max-height: 400px; 
   padding: 15px;
-  /* transform: translate3d(0, 0, 0); */
+ 
 }
 
 .question i {
@@ -567,10 +582,11 @@ body{
     .footer h2 {
       font-size: 20px;
       margin-bottom: 15px;
+      color:#efeef1;
     }
 
     .footer p {
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.6;
     }
 
@@ -586,13 +602,14 @@ body{
     .footer ul li a {
       text-decoration: none;
       color: #ccc;
-      font-size: 14px;
+      font-size: 15px;
       transition: color 0.3s ease;
     }
 
     .footer ul li a:hover {
-      color: #fff;
-      padding-left: 5px;
+      color:#6D28D9;
+      transform: scale3d(1.1);
+      /* padding-left: 5px; */
     }
 
     .footer .fourth-links ul {

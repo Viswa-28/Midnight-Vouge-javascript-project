@@ -57,6 +57,9 @@ $('.men-btn').click(function () {
   $('.women-btn').removeClass('active');
   $('.men-card').addClass('active');
   $('.women-card').removeClass('active');
+  $('.men-card'.css({
+    'transform': 'rotateY(45deg)'
+  }));
 });
 $('.women-btn').click(function () {
   $('.women-btn').addClass('active');
@@ -79,7 +82,7 @@ $('.women-btn').click(function () {
     $('.answer').removeClass('active').slideUp(300);
    if (!isActive) {
       $(this).addClass('active');
-      $(this).next('.answer').addClass('active').slideToggle(300);
+      $(this).next('.answer').addClass('active').slideDown(300);
     }
   });
 
@@ -100,7 +103,7 @@ $('.women-btn').click(function () {
   /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
 
-  $('#contactForm').submit(function (e) {
+  $('#contactForm').click(function (e) {
     e.preventDefault();
 
     let isValid = true;
@@ -127,6 +130,7 @@ $('.women-btn').click(function () {
 
     if (isValid) {
       alert('Form submitted successfully!');
+      $('#contactForm')[0].reset();
       
     }
   });
