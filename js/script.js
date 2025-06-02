@@ -76,10 +76,10 @@ $('.women-btn').click(function () {
   $('.question').click(function () {
     let isActive = $(this).hasClass('active');
     $('.question').removeClass('active');
-    $('.answer').removeClass('active').slideUp(100);
+    $('.answer').removeClass('active').slideUp(300);
    if (!isActive) {
       $(this).addClass('active');
-      $(this).next('.answer').addClass('active').slideDown(100);
+      $(this).next('.answer').addClass('active').slideToggle(300);
     }
   });
 
@@ -99,7 +99,7 @@ $('.women-btn').click(function () {
 
   /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-$(document).ready(function () {
+
   $('#contactForm').submit(function (e) {
     e.preventDefault();
 
@@ -130,7 +130,7 @@ $(document).ready(function () {
       
     }
   });
-});
+
 
 
 
