@@ -38,6 +38,28 @@ window.addEventListener('resize', () => {
 //   }
 // });
 
+// modal
+$('.signup').click(function () {
+  $('.modal').css({
+    'display': 'flex'
+  });
+});
+
+$('.close-modal').click(function () {
+  $('.modal').css({
+    'display': 'none'
+  });
+});
+
+let width=$(document).innerWidth();
+if (width<600) {setTimeout(() => {
+  $('.modal').css({
+    'display': 'flex'
+  });
+}, 8000);
+
+  
+}
 
 
 // third
