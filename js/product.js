@@ -39,3 +39,24 @@ $('.size').click(function () {
   $('.size').removeClass('active');
   $(this).addClass('active');
 });
+
+
+// count
+
+let ubDate=$('.count p').val==1;
+$('.bi-plus').click(function () {
+  ubDate++;
+  $('.count p').text(ubDate);
+});
+$('.bi-dash').click(function () {
+  ubDate--;
+  $('.count p').text(ubDate);
+});
+// if (ubDate=1) {
+//  $('.bi-dash').removeClass('bi-dash');
+  
+// }
+// elseif(ubDate>1) ;{
+//    $('.bi-dash').addClass('bi-dash');
+// };
+ 
