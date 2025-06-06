@@ -634,7 +634,7 @@ body{
     color: #fff9f9;
     font-size: 15px;
     font-weight: 500;
-    min-width: 100%;
+    /* min-width: 100%; */
     
   }
   .form input:focus{
@@ -1059,6 +1059,25 @@ body{
     
     
    }
+ .accordian{
+  height: auto;
+  /* width: 90% */
+ }
+   .answer.active {
+  height: auto; 
+  padding: 15px;
+  animation: backwards;
+ 
+}
+.question {
+  height: auto;
+  padding: 15px;
+}
+.question.active{
+  height: auto;
+  padding: 15px;
+  animation: backwards;
+}
    .email{
     width: 90%!important;
     
@@ -1103,6 +1122,8 @@ body{
   }
   .form button{
     display: flex;
+    justify-content: center;
+    align-items: center;
    
     margin-left: 70px;
     margin-top: 10px;
