@@ -14,6 +14,24 @@
 </head>
 
 <body>
+   <div class="modal">
+    <div class="inner-modal">
+      <div class="close-modal">
+        <i class="bi bi-x"></i>
+      </div>
+      <div class="modal-content">
+        <h2>login</h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
   <header>
     <div class="nav">
       <h2 class="fs-25">Midnight Vouge</h2>
@@ -31,9 +49,8 @@
       <div class="icon-container">
         <i class="bi bi-search"></i>
         <i class="bi bi-bag"></i>
-        <div class="primary-btn">
-          sign up
-        </div>
+        <div class="primary-btn signup">
+          Login</div>
       </div>
     </div>
   </header>
@@ -81,7 +98,7 @@
         <div class="cart">
           <div class="count">
             <i class="bi bi-dash"></i>
-            <p class="value-count">1</p>
+            <p class="value">1</p>
             <i class="bi bi-plus"></i>
           </div>
           <div class="primary-btn">
