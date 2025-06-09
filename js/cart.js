@@ -4,9 +4,13 @@ $('.promo button').click(function () {
 
   if (promoCode === "First500") {
    $('.Discount').addClass('active');
-   let total = $('.total-val').val()
+   
+//    ubDatePrice();
+   let total = $('.total-val').text()
     // total= parseInt(total);
-    total= total - 500;
+      total = parseInt(total); 
+    let discount= 500;
+    total= total - discount;
     $('.total-val').text(`Rs. ${total}`);
   } else {
     $('.discount').css('display', 'none'); 
@@ -45,3 +49,9 @@ $('.promo button').click(function () {
     }
   });
 
+// Initialize variables
+
+// function ubDatePrice() {
+//     const total = subtotal - discount;
+//   $('.total-val').text(Rs. ${total});
+// }
