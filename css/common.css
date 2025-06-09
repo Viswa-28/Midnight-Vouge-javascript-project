@@ -179,6 +179,7 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;

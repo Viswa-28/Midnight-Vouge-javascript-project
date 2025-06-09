@@ -58,5 +58,5 @@ $(".size").click(function () {
       updateCountDisplay();
     }
   });
-  updateCountDisplay();
+  // updateCountDisplay();
 
