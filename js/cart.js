@@ -4,8 +4,44 @@ $('.promo button').click(function () {
 
   if (promoCode === "First500") {
    $('.Discount').addClass('active');
-    // alert('Promo code applied!');
+   let total = $('.total-val').val()
+    // total= parseInt(total);
+    total= total - 500;
+    $('.total-val').text(`Rs. ${total}`);
   } else {
     $('.discount').css('display', 'none'); 
   }
 });
+
+
+
+ let upDate = parseInt($(".count p").text());
+
+  function updateCountDisplay() {
+    $(".count p").text(upDate);
+    if (upDate <= 1) {
+      $(".bi-dash").addClass("disable");
+    } else {
+      $(".bi-dash").removeClass("disable");
+    }
+  }
+
+  $(".bi-plus").click(function () {
+    upDate++;
+    updateCountDisplay();
+    $('.total-amount').text(`Rs. ${upDate * 2000}`);
+    $('.Subtotal').text(`Rs. ${upDate * 2000}`);
+    $('.total-val').text(`Rs. ${upDate * 2000}`);
+
+  });
+
+  $(".bi-dash").click(function () {
+    if (upDate > 1) {
+      upDate--;
+      $('.total-amount').text(`Rs. ${upDate * 2000}`);
+      $('.Subtotal').text(`Rs. ${upDate * 2000}`);
+      $('.total-val').text(`Rs. ${upDate * 2000}`);
+      updateCountDisplay();
+    }
+  });
+
