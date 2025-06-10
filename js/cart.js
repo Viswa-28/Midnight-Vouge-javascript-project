@@ -6,9 +6,7 @@ $('.promo button').click(function () {
    $('.Discount').addClass('active');
    
 //    ubDatePrice();
-   let total = $('.total-val').text()
-    // total= parseInt(total);
-      total = parseInt(total); 
+   let total = parseInt($('.total-amount').text() .slice(3));
     let discount= 500;
     total= total - discount;
     $('.total-val').text(`Rs. ${total}`);

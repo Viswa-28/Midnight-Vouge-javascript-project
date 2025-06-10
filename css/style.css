@@ -1064,6 +1064,16 @@ body{
   height: auto;
   /* width: 90% */
  }
+ .accordian-container{
+  height: auto;
+  /* width: 90% */
+ }
+ .accordian-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: auto;
+  /* overflow: hidden; */
+}
    .answer.active {
   height: auto; 
   padding: 15px;
