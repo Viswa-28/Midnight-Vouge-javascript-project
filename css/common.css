@@ -332,6 +332,18 @@ body {
   /* transform: scale(1.2); */
   color: #6D28D9;
 }
+.author{
+    text-align: center;
+    background-color: #292929;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+}
+.author a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}  
 
 
 

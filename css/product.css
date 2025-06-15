@@ -45,6 +45,23 @@ a{
   font-weight: 500;
   color: #f2f2f2;
 }
+.social-icons {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-icons li a {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  color: #0077b5; /* Example hover color */
+}
+
 
 @media (max-width: 600px) {
   .breadcrumb {

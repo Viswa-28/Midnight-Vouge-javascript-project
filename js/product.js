@@ -20,14 +20,14 @@ $(".close-modal").click(function () {
   });
 });
 
-let width = $(document).innerWidth();
-if (width < 600) {
-  setTimeout(() => {
-    $(".modal").css({
-      display: "flex",
-    });
-  }, 5000);
-}
+// let width = $(document).innerWidth();
+// if (width < 600) {
+//   setTimeout(() => {
+//     $(".modal").css({
+//       display: "flex",
+//     });
+//   }, 5000);
+// }
 
 $(".size").click(function () {
   $(".size").removeClass("active");
