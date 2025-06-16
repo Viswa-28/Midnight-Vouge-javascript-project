@@ -84,11 +84,13 @@
   <section class="second">
     <h2 class="section-title">New Arrival</h2>
     <div class="card-container">
-      <div class="card" style="background-image: url('./images/second-one.png');">
+      <a href="">
+        <div class="card" style="background-image: url('./images/second-one.png');">
         <div class="overlay">
           <div class="image-name">Midnight Elegance</div>
         </div>
       </div>
+      </a>
 
       <a href="./product.html">
         <div class="card" style="background-image: url('./images/second-two.png');">
@@ -98,11 +100,13 @@
         </div>
       </a>
 
-      <div class="card" style="background-image: url('./images/second-three.png');">
+      <a href="">
+        <div class="card" style="background-image: url('./images/second-three.png');">
         <div class="overlay">
           <div class="image-name">Glam After Dark</div>
         </div>
       </div>
+      </a>
     </div>
   </section>
 
@@ -208,14 +212,17 @@
 
         <input type="text" placeholder="Last name" class="lname">
       </div>
-      <p class="fname-error error"></p>
+     <div class="error-cont">
+       <p class="fname-error error"></p>
+      <p class="lname-error error"></p>
+     </div>
 
       <input type="text" placeholder="Email Address" class="email">
       <p class="email-error error"></p>
 
       <textarea class="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-      <button type="submit" class="primary-btn">Submit</button>
+       <p class="message-error error"></p>
+      <button type="submit" class="primary-btn form-btn">Submit</button>
     </form>
   </section>
 

@@ -145,20 +145,40 @@ $('.women-btn').click(function () {
       $('.fname-error').text('First name is required');
       isValid = false;
     }
+    let fnamePattern = /^[a-zA-Z]{3,}$/; 
+    if(!fnamePattern.test(fname)) {
+      // $('.fname-error').text('First name must be at least 3 characters long');
+      isValid = false;
+    }
+    if($('.lname').val().trim() === '') {
+      $('.lname-error').text('Last name is required');
+      isValid = false;
+    }
 
     
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   const emailPattern = /^[^\s@_][^\s@]*@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       $('.email-error').text('Enter a valid email address');
       isValid = false;
     }
 
-
-    if (isValid) {
-      alert('Form submitted successfully!');
-      $('#contactForm')[0].reset();
-      
+    if($('.message').val().trim() === '') {
+      $('.message-error').text('Message is required');
+      isValid = false;
     }
+
+    $(".form-btn").click(function () {
+      if (isValid) {
+        // Submit the form or perform any other action
+        alert('Form submitted successfully!');
+        $('.fname').val('');
+        $('.email').val('');
+        $('.lname').val('');
+      } else {
+        alert('Please fix the errors in the form.');
+      }
+    }
+    );
   });
 
 
