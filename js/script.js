@@ -141,15 +141,16 @@ $('.women-btn').click(function () {
     $('.error').text('');
 
     // Validate First Name
-    if (fname === '') {
+    let fnamePattern = /^[a-zA-Z]{3,}$/;
+    if (fname === '' || !fnamePattern.test(fname)) {
       $('.fname-error').text('First name is required');
       isValid = false;
     }
-    let fnamePattern = /^[a-zA-Z]{3,}$/; 
-    if(!fnamePattern.test(fname)) {
-      // $('.fname-error').text('First name must be at least 3 characters long');
-      isValid = false;
-    }
+
+// if (!fnamePattern.test(fname)) {
+//   $('.fname-error').text('First name must be at least 3 letters and contain only alphabets.');
+//   isValid = false;
+// } 
     if($('.lname').val().trim() === '') {
       $('.lname-error').text('Last name is required');
       isValid = false;

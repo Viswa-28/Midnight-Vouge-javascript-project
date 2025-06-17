@@ -8,6 +8,17 @@ hamburgerIcon.addEventListener("click", () => {
   linksMenu.classList.toggle("show");
   icon.classList.toggle("show");
 });
+$('.signup').click(function () {
+  $('.modal').css({
+    'display': 'flex'
+  });
+});
+
+$('.close-modal').click(function () {
+  $('.modal').css({
+    'display': 'none'
+  });
+});
 
 
 

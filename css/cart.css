@@ -208,7 +208,7 @@
 
 .checkout{
     background-color: #ccc;
-    height: 100vh;
+    height: 70vh;
     /* width: 00%; */
     display: none;
     justify-content: center;
@@ -267,11 +267,12 @@
 
 
 /* media */
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .cart{
         margin-top: 50px;
         height: auto;
         margin-top: 100px;
+        margin-bottom: 50px;
     }
     .cart-body{
         flex-direction: column;
