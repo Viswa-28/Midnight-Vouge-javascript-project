@@ -527,7 +527,7 @@ p{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 200px;
+  height: 250px;
 }
 
 .accordian-item {
