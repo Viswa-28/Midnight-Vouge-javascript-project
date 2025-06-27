@@ -157,7 +157,7 @@ $('.women-btn').click(function () {
     }
 
     
-   const emailPattern = /^[^\s@_][^\s@]*@[a-zA-Z]+\.[^\s@]+$/;
+   const emailPattern = /^[^\s@_][^\s@]*@[a-zA-ZKO]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       $('.email-error').text('Enter a valid email address');
       isValid = false;
