@@ -49,6 +49,14 @@
 
   }
 }
+.product-size{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-decoration: underline;
+    
+}
 
 body {
   background-color: black;
