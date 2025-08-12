@@ -21,7 +21,7 @@
       </div>
       <div class="modal-content">
         <h2>login</h2>
-        <form>
+        <form method="post">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
           <label for="password">Password:</label>
@@ -36,10 +36,10 @@
     <div class="nav">
       <h2 class="fs-25">Midnight Vouge</h2>
       <ul class="links">
-        <li><a href="#">New Arrivals</a></li>
-        <li><a href="#">Best Seller</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Collections</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#second">New Arrivals</a></li>
+        <li><a href="./products/product.html">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="right-icons">
         <div class="hamburger-icon">
@@ -63,17 +63,17 @@
 
   <div class="banner">
     <div class="banner-content">
-      <h1>Discover the Latest Trends</h1>
+      <h1>Discover the Midnight Elegance</h1>
       <p>Unveil the essence of elegance after dark. Midnight Vogue blends high fashion with the allure of midnight—where
         bold silhouettes, shimmering accents, and timeless style meet. Embrace the night. Own the spotlight.
 
       </p>
       <div class="btn-container">
-        <button class="primary-btn">Shop Now</button>
+       <a href="./Noir.html"> <button class="primary-btn">Buy Now</button></a>
       </div>
     </div>
     <div class="banner-image">
-      <img src="./images/banner-img.png" alt="Fashion Banner">
+      <img src="./images/second-two.png" alt="Fashion Banner">
 
 
     </div>
@@ -83,33 +83,33 @@
 
   <!-- banner-end -->
 
-  <section class="second">
+  <section class="second" id="second">
     <h2 class="section-title">New Arrival</h2>
     <div class="card-container">
-      <a href="">
+      
 
         <div class="card" style="background-image: url('./images/second-one.png');">
         <div class="overlay">
           <div class="image-name">Midnight Elegance</div>
         </div>
       </div>
-      </a>
+      
 
-      <a href="./product.html">
+      
         <div class="card" style="background-image: url('./images/second-two.png');">
           <div class="overlay">
             <div class="image-name">Noir Muse</div>
           </div>
         </div>
-      </a>
+     
 
-      <a href="">
+      
         <div class="card" style="background-image: url('./images/second-three.png');">
         <div class="overlay">
           <div class="image-name">Glam After Dark</div>
         </div>
       </div>
-      </a>
+     
     </div>
   </section>
 
@@ -214,29 +214,20 @@
   </section>
 
 
+  <h2 class="section-title">Contact</h2>
+  <form id="contactForm">
+  <input type="text" class="username" placeholder="Username">
+  <span class="error username-error"></span>
 
+  <input type="email" class="email" placeholder="Email">
+  <span class="error email-error"></span>
 
-  <section class="form">
-    <h2 class="section-title">Get In Touch</h2>
-    <form id="contactForm">
-      <div class="first-form">
-        <input type="text" placeholder="First Name" class="fname">
+  <textarea class="message" placeholder="Your Message"></textarea>
+  <span class="error message-error"></span>
 
-        <input type="text" placeholder="Last name" class="lname">
-      </div>
-     <div class="error-cont">
-       <p class="fname-error error"></p>
-      <p class="lname-error error"></p>
-     </div>
+  <button type="submit" class="form-btn">Submit</button>
+</form>
 
-      <input type="text" placeholder="Email Address" class="email">
-      <p class="email-error error"></p>
-
-      <textarea class="message" cols="30" rows="10" placeholder="Message"></textarea>
-       <p class="message-error error"></p>
-      <button type="submit" class="primary-btn form-btn">Submit</button>
-    </form>
-  </section>
 
 
   <!-- footer -->

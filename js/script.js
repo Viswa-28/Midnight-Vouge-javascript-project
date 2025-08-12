@@ -126,61 +126,84 @@ $('.women-btn').click(function () {
 
   // form
 
-  /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+ $(document).ready(function () {
+  // Username validation on blur
+  $('.username').blur(function () {
+    let username = $(this).val().trim();
+    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,14}$/;
 
+    if (!usernamePattern.test(username)) {
+      $('.username-error').text('Username must be 3–15 characters, start with a letter, and contain only letters, numbers, or underscores.');
+    } else {
+      $('.username-error').text('');
+    }
+  });
 
-  $('#contactForm').click(function (e) {
+  // Email validation on blur
+  $('.email').blur(function () {
+    let email = $(this).val().trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+      $('.email-error').text('Enter a valid email address.');
+    } else {
+      $('.email-error').text('');
+    }
+  });
+
+  // Message validation on blur
+  $('.message').blur(function () {
+    let message = $(this).val().trim();
+
+    if (message === '') {
+      $('.message-error').text('Message is required.');
+    } else {
+      $('.message-error').text('');
+    }
+  });
+
+  // Full form validation on submit
+  $('#contactForm').submit(function (e) {
     e.preventDefault();
 
     let isValid = true;
 
-    let fname = $('.fname').val().trim();
+    let username = $('.username').val().trim();
     let email = $('.email').val().trim();
+    let message = $('.message').val().trim();
 
-    // Clear previous errors
-    $('.error').text('');
+    // Re-run all field validations on submit
+    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,14}$/;
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validate First Name
-    let fnamePattern = /^[a-zA-Z]{3,}$/;
-    if (fname === '' || !fnamePattern.test(fname)) {
-      $('.fname-error').text('First name is required');
+    if (!usernamePattern.test(username)) {
+      $('.username-error').text('enter a valid username.');
       isValid = false;
+      alert('enter a valid username.');
     }
 
-// if (!fnamePattern.test(fname)) {
-//   $('.fname-error').text('First name must be at least 3 letters and contain only alphabets.');
-//   isValid = false;
-// } 
-    if($('.lname').val().trim() === '') {
-      $('.lname-error').text('Last name is required');
-      isValid = false;
-    }
-
-    
-   const emailPattern = /^[^\s@_][^\s@]*@[a-zA-ZKO]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
-      $('.email-error').text('Enter a valid email address');
+      $('.email-error').text('Enter a valid email address.');
       isValid = false;
+      alert('Enter a valid email address.');
     }
 
-    if($('.message').val().trim() === '') {
-      $('.message-error').text('Message is required');
+    if (message === '') {
+      $('.message-error').text('Message is required.');
       isValid = false;
+      alert('Message is required.');
     }
 
-    $(".form-btn").click(function () {
-      if (isValid) {
-        // Submit the form or perform any other action
-        alert('Form submitted successfully!');
-        $('.fname').val('');
-        $('.email').val('');
-        $('.lname').val('');
-      } else {
-        alert('Please fix the errors in the form.');
-      }
+    if (isValid) {
+      alert('Form submitted successfully!');
+      $('.username, .email, .message').val('');
+    } else {
+      alert('Please fix the errors in the form.');
     }
-    );
   });
+});
+
+
 
 
 

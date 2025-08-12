@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Classic Black Suit",
+    "description": "Premium tailored fit for men.",
+    "price": 199,
+    "image": "images/suit1.jpg",
+    "category": "men"
+  },
+  {
+    "name": "Elegant Black Dress",
+    "description": "Evening wear for special occasions.",
+    "price": 149,
+    "image": "images/dress1.jpg",
+    "category": "women"
+  },
+  {
+    "name": "Luxury Leather Belt",
+    "description": "Genuine leather with metal buckle.",
+    "price": 59,
+    "image": "images/belt1.jpg",
+    "category": "accessories"
+  },
+  {
+    "name": "Slim Fit Tuxedo",
+    "description": "Sharp and stylish formal wear.",
+    "price": 220,
+    "image": "images/tuxedo1.jpg",
+    "category": "men"
+  }
+]

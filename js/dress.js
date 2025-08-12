@@ -1,0 +1,26 @@
+// $(document).ready(function () {
+
+//     $('.all').click(function () {
+//         if($(".product-card").hasClass("men")) {
+//      $('men').fadeout(0);
+//      $('.product-card').fadeIn(0);
+//         };
+// });
+// });
+
+$(document).ready(function () {
+    $(".filter-btn").click(function () {
+        $(".filter-btn").removeClass("active");
+        $(this).addClass("active");
+
+        let filterValue = $(this).attr("data-filter");
+
+        if (filterValue === "all") {
+            $(".product-card").fadeIn(200);
+        } else {
+            $(".product-card").hide();
+            $(`.product-card[data-category='${filterValue}']`).fadeIn(200);
+        }
+    });
+});
+
