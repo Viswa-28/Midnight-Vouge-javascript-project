@@ -876,6 +876,7 @@ button.form-btn:hover {
     align-items: center;
     justify-content: space-evenly;
   }
+  
  
   .links {
     /* display: none; */
@@ -911,6 +912,7 @@ button.form-btn:hover {
   margin: 0!important;
   display: block;
   }
+  
 }
 .icon-container{
     display: none;
@@ -928,7 +930,10 @@ button.form-btn:hover {
         flex-direction: column;
         display: none!important;
     }
-
+/* .second .card-container{
+    justify-content: start;
+    align-items: start;
+  } */
 
 }
 
@@ -1010,7 +1015,7 @@ button.form-btn:hover {
     justify-content: center;
   }
   .third .card {
-      width: 500px!important;
+      width: 40%!important;
       /* height: 500px!important; */
       display: flex;
       flex-direction: column;
@@ -1082,13 +1087,14 @@ button.form-btn:hover {
     font-size: clamp(0.75rem, 0.6667rem + 0.2222vw, 1.25rem);
     padding: 8px 16px;
   }
-  .w-card{
-    width: 90%!important;
-    /* height: 90%!important; */
+  .third .card{
+    width: 100%!important;
+    /* height: 500px!important; */
+    display: flex;
+    flex-direction: column;
+
   }
-   .card {
-        width: 80%;
-      }
+
       .second{
         margin-top: 10px;
       }
@@ -1132,14 +1138,7 @@ button.form-btn:hover {
   padding: 15px;
   animation: backwards;
 }
-   .email{
-    width: 90%!important;
-    
-   }
-   .message{
-    width: 90%!important;
-    
-   }
+   
    .btn{
     width: 90%;
     
@@ -1148,6 +1147,40 @@ button.form-btn:hover {
     width: 90%!important;
     
    }
+   .phone{
+    width: 90%!important;
+    
+   }
+   .accordian{
+    height: auto;
+    /* width: 90% */
+   }
+   .accordian-container{
+    height: auto;
+    /* width: 90% */
+   }
+   .accordian-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: auto;
+    /* overflow: hidden; */
+  }
+   .answer.active {
+    height: auto;
+    padding: 15px;
+    animation: backwards;
+   
+  }
+  #contactForm{
+    flex-direction: column;
+    justify-content: center!important;
+    align-items: center!important;
+    margin-left: 20px;
+    width: 90%;
+  }
+  
+  
+  
    
 }
 @media only screen and (max-width: 400px) {

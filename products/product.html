@@ -6,11 +6,53 @@
   <title>Document</title>
   <link rel="stylesheet" href="../css/dress.css">
   <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
 </head>
 <body>
+    <div class="modal">
+    <div class="inner-modal">
+      <div class="close-modal">
+        <i class="bi bi-x"></i>
+      </div>
+      <div class="modal-content">
+        <h2>login</h2>
+        <form method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
 
-
-  <!-- Filter Buttons -->
+    </div>
+  </div>
+  <header>
+    <div class="nav">
+      <h2 class="fs-25">Midnight Vouge</h2>
+      <ul class="links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#second">New Arrivals</a></li>
+        <li><a href="./products/product.html">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="right-icons">
+        <div class="hamburger-icon">
+          <i class="bi bi-list"></i>
+        </div>
+      </div>
+      <div class="icon-container">
+        <i class="bi bi-search"></i>
+        <i class="bi bi-bag"></i>
+        <div class="primary-btn signup">
+          Login
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
 <div class="filters">
   <button class="filter-btn active" data-filter="all">All</button>
   <button class="filter-btn" data-filter="men">Men</button>
@@ -23,11 +65,82 @@
     <p class="">Velvet Night Suit</p>
     <span class="">Price: $50</span>
   </div>
-  <div class="product-card" data-category="men">Men's Jacket</div>
-  <div class="product-card" data-category="women">Women's Dress</div>
-  <div class="product-card" data-category="women">Women's Top</div>
-  <div class="product-card" data-category="men">Men's Jeans</div>
+  <div class="product-card" data-category="men">
+    <img src="../images/look1.jpg" alt="">
+    <p class="">Velvet Night Suit</p>
+    <span class="">Price: $50</span>
+  </div>
+  <div class="product-card" data-category="men">
+    <img src="../images/look1.jpg" alt="">
+    <p class="">Velvet Night Suit</p>
+    <span class="">Price: $50</span>
+  </div>
+  <div class="product-card" data-category="women">
+    <img src="../images/look1.jpg" alt="">
+    <p class="">Velvet Night Suit</p>
+    <span class="">Price: $50</span>
+  </div>
+  <div class="product-card" data-category="women">
+    <img src="../images/look1.jpg" alt="">
+    <p class="">Velvet Night Suit</p>
+    <span class="">Price: $50</span>
+  </div>
+  <div class="product-card" data-category="women">
+    <img src="../images/look1.jpg" alt="">
+    <p class="">Velvet Night Suit</p>
+    <span class="">Price: $50</span>
+  </div>
+  <div class="product-card" data-category="women">
+    <img src="../images/look1.jpg" alt="">
+    <p class="">Velvet Night Suit</p>
+    <span class="">Price: $50</span>
+  </div>
+
 </div>
+
+  </main>
+   <footer class="footer">
+    <div class="first-links">
+      <h2>Midnight Vouge</h2>
+      <p>Where luxury meets darkness, and style finds its true expression.</p>
+    </div>
+    <div class="second-links">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Best Seller</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Collections</a></li>
+      </ul>
+    </div>
+    <div class="third-links">
+      <h2>Help</h2>
+      <ul>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fourth-links">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a rel="noopener" href="https://www.linkedin.com/in/viswa-a-3122532b1/" target="_blank"><i
+              class="bi bi-linkedin"></i></a></li>
+        <li><a rel="noopener" href="https://www.instagram.com/___visw_a/" target="_blank"><i
+              class="bi bi-instagram"></i></a></li>
+
+        <li><a rel="noopener" href="https://www.behance.net/viswa28" target="_blank"><i class="bi  bi-behance"></i></a>
+        </li>
+      </ul>
+    </div>
+
+  </footer>
+  <p class="author">Copyright &copy; 2025 Midnight Vouge | All Rights Reserved | Designed and Developed by <a rel="noopener" href="https://www.linkedin.com/in/viswa-a-3122532b1/"
+      target="_blank">A.Viswa</a></p>
+
+
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

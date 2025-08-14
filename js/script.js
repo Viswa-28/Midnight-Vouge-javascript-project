@@ -51,15 +51,20 @@ $('.close-modal').click(function () {
   });
 });
 
-let width=$(document).innerWidth();
-if (width<600) {setTimeout(() => {
-  $('.modal').css({
-    'display': 'flex'
-  });
-}, 8000);
+
 
   
+if (window.location.href.includes('index.html')) {
+    let width = $(document).innerWidth();
+    if (width < 600) {
+        setTimeout(() => {
+            $('.modal').css({
+                'display': 'flex'
+            });
+        }, 8000);
+    }
 }
+
 
 
 // third
@@ -133,7 +138,7 @@ $('.women-btn').click(function () {
     const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,14}$/;
 
     if (!usernamePattern.test(username)) {
-      $('.username-error').text('Username must be 3–15 characters, start with a letter, and contain only letters, numbers, or underscores.');
+      $('.username-error').text('Enter a valid username.');
     } else {
       $('.username-error').text('');
     }
@@ -162,7 +167,7 @@ $('.women-btn').click(function () {
     }
   });
 
-  // Full form validation on submit
+  
   $('#contactForm').submit(function (e) {
     e.preventDefault();
 
@@ -173,25 +178,29 @@ $('.women-btn').click(function () {
     let message = $('.message').val().trim();
 
     // Re-run all field validations on submit
-    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,14}$/;
+    const usernamePattern = /^[a-zA-Z][a-zA-Z_]{2,14}$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const messagePattern = /^[A-Za-z0-9!?@]+@[A-Za-z0-9!?@]+\.[A-Za-z]{2,}$/;
+
 
     if (!usernamePattern.test(username)) {
       $('.username-error').text('enter a valid username.');
       isValid = false;
-      alert('enter a valid username.');
+      // alert('enter a valid username.');
     }
 
     if (!emailPattern.test(email)) {
       $('.email-error').text('Enter a valid email address.');
       isValid = false;
-      alert('Enter a valid email address.');
+      // alert('Enter a valid email address.');
     }
 
     if (message === '') {
       $('.message-error').text('Message is required.');
+      
       isValid = false;
-      alert('Message is required.');
+
+      // alert('Message is required.');
     }
 
     if (isValid) {
