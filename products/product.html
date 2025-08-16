@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -146,4 +146,106 @@
 
 <script src="../js/dress.js"></script>
 </body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Ecommerce - Filter System</title>
+    <link rel="stylesheet" href="../css/dress.css">
+</head>
+<body>
+    <header>
+        <h1>Premium Ecommerce Store</h1>
+        <p>Discover Luxury Fashion & Accessories</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Filter Section -->
+            <aside class="filter-section">
+                <h2>Filter Products</h2>
+                
+                <div class="filter-group">
+                    <h3>Categories</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="premium-suits" checked>
+                        <span class="checkmark"></span>
+                        Premium Suits
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="premium-dresses" checked>
+                        <span class="checkmark"></span>
+                        Premium Women Dresses
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="premium-accessories" checked>
+                        <span class="checkmark"></span>
+                        Premium Accessories
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Price Range</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="price-under-500" checked>
+                        <span class="checkmark"></span>
+                        Under $500
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="price-500-1000" checked>
+                        <span class="checkmark"></span>
+                        $500 - $1000
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="price-over-1000" checked>
+                        <span class="checkmark"></span>
+                        Over $1000
+                    </label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Brand</h3>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="brand-luxury" checked>
+                        <span class="checkmark"></span>
+                        Luxury Brands
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="brand-premium" checked>
+                        <span class="checkmark"></span>
+                        Premium Brands
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="brand-exclusive" checked>
+                        <span class="checkmark"></span>
+                        Exclusive Brands
+                    </label>
+                </div>
+            </aside>
+
+            <!-- Products Section -->
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Products</h2>
+                    <p id="product-count">Showing all products</p>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Products will be dynamically loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="../js/dress.js"></script>
+</body>
 </html>
+

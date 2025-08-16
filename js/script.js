@@ -43,6 +43,8 @@ $('.signup').click(function () {
   $('.modal').css({
     'display': 'flex'
   });
+  // window.scrollTo(0, 0);
+  // window.location.href='#';
 });
 
 $('.close-modal').click(function () {
@@ -61,7 +63,7 @@ if (window.location.href.includes('index.html')) {
             $('.modal').css({
                 'display': 'flex'
             });
-        }, 8000);
+        }, 5000);
     }
 }
 
