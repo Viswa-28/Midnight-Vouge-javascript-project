@@ -149,7 +149,8 @@ $('.women-btn').click(function () {
   // Email validation on blur
   $('.email').blur(function () {
     let email = $(this).val().trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailPattern = /^[A-Za-z][^\s@]*@[^\s@]+\.[^\s@]+$/
+;
 
     if (!emailPattern.test(email)) {
       $('.email-error').text('Enter a valid email address.');
@@ -159,15 +160,21 @@ $('.women-btn').click(function () {
   });
 
   // Message validation on blur
-  $('.message').blur(function () {
-    let message = $(this).val().trim();
+ $('.message').blur(function () {
+  let message = $(this).val().trim();
+  let pattern = /^[^<>+\-*^]+$/; // disallow < > + - * ^
 
-    if (message === '') {
-      $('.message-error').text('Message is required.');
-    } else {
-      $('.message-error').text('');
-    }
-  });
+  if (message === '') {
+    $('.message-error').text('Message is required.');
+  } else if (!pattern.test(message)) {
+    $('.message-error').text('dont use special character');
+  } else if (message.length < 30) {
+    $('.message-error').text('Message must be at least 30 characters.');
+  } else {
+    $('.message-error').text('');
+  }
+});
+
 
   
   $('#contactForm').submit(function (e) {

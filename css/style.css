@@ -301,7 +301,7 @@ p{
   margin-bottom: 20px;
   text-align: start;
 }
-.banner .primary-btn {
+/* .banner .primary-btn {
   background-color: #7C3AED;
   color: white;
   padding: 12px 24px;
@@ -311,9 +311,9 @@ p{
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-}
+} */
 .banner .primary-btn:hover {
-  box-shadow: 0 4px 20px rgba(124, 60, 173, 0.9);
+  /* box-shadow: 0 4px 20px rgba(124, 60, 173, 0.9); */
   transform: translateY(-2px);
   background-color: #6D28D9;
   color: white;
@@ -1097,12 +1097,32 @@ button.form-btn:hover {
     padding: 8px 16px;
   }
   .third .card{
-    width: 100%!important;
+    width: 90%!important;
     /* height: 500px!important; */
     display: flex;
     flex-direction: column;
+    object-fit: cover;
+    object-position: center;
 
   }
+  .third .card img{
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    
+  }
+  .women-card .card {
+    width: 90%!important;
+    /* height: 500px!important; */
+  }
+  .women-card .card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(124, 60, 173, 0.5);
+    object-fit: cover;
+    transition: all 0.3s ease;
+    object-position: center;
 
       .second{
         margin-top: 10px;
@@ -1191,7 +1211,7 @@ button.form-btn:hover {
     margin-left: 20px;
     width: 90%;
   }
-  
+}
   
   
    
