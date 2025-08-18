@@ -224,10 +224,14 @@ opacity: 0.2;
 }
 .product .right .primary-btn{
   width: 20%;
-  /* padding: 10px; */
+  padding: 10px;
   
   margin-top: 30px;
+  /* padding: 10px 20px; */
+}
+.buy{
   padding: 10px 20px;
+  text-align: center;
 }
 
 

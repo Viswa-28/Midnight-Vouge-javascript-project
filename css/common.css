@@ -308,7 +308,20 @@ body {
   list-style: none;
   padding: 0;
 }
+footer .link-container{
+  height: 100%;
+  width: 25%;
+  /* background-color: orange;   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+footer .first-links p{
+  width: 95%;
+  text-align: center;
+}
 .footer ul li {
   margin-bottom: 10px;
 }
@@ -365,11 +378,7 @@ body {
     margin-left: 0;
   }
 
-  .links {
-    /* width: 100%; */
-    justify-content: center;
-    /* flex-wrap: wrap; */
-  }
+ 
 
   .links li a {
     font-size: 16px;

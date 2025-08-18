@@ -137,7 +137,8 @@ $('.women-btn').click(function () {
   // Username validation on blur
   $('.username').blur(function () {
     let username = $(this).val().trim();
-    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9_]{2,14}$/;
+    const usernamePattern = /^[A-Za-z ]{3,15}$/
+;
 
     if (!usernamePattern.test(username)) {
       $('.username-error').text('Enter a valid username.');
@@ -162,12 +163,12 @@ $('.women-btn').click(function () {
   // Message validation on blur
  $('.message').blur(function () {
   let message = $(this).val().trim();
-  let pattern = /^[^<>+\-*^]+$/; // disallow < > + - * ^
+  let pattern = /^[^<>+\-*{}()_^]+$/; // disallow < > + - * ^
 
   if (message === '') {
     $('.message-error').text('Message is required.');
   } else if (!pattern.test(message)) {
-    $('.message-error').text('dont use special character');
+    $('.message-error').text('Message contains invalid characters.');
   } else if (message.length < 30) {
     $('.message-error').text('Message must be at least 30 characters.');
   } else {
