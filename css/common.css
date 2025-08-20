@@ -384,11 +384,11 @@ footer .first-links p{
     font-size: 16px;
   }
 
-  /* .right-icons {
+  .right-icons {
     width: 100%;
     justify-content: center;
     padding: 10px 0;
-  } */
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -416,6 +416,8 @@ footer .first-links p{
   .links {
     /* display: none; */
     transform: translateY(-200%);
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     position: absolute;
     top: 80px;
@@ -532,8 +534,20 @@ footer .first-links p{
   .nav h2 {
     font-size: 16px;
     margin-left: 0;
+    width: 100%;
   }
+ .links.show {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    transition-duration: 0.7s;
 
+  }
   .banner img {
     width: 100%;
     height: 300px;

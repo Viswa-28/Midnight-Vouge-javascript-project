@@ -1314,6 +1314,8 @@ footer .first-links p{
     .accordian {
       height: auto !important;
       /* width: 90% */
+            margin: 60px,0;
+
     }
 
     .accordian-container {
@@ -1348,7 +1350,7 @@ footer .first-links p{
       /* justify-content: center!important;
     align-items: center!important; */
       /* margin-left: 20px;/ */
-      margin-top: 20px;
+      margin-top: 120px;
       width: 90% !important;
       padding: 0px;
 
@@ -1365,13 +1367,7 @@ footer .first-links p{
       font-size: 16px;
     }
 
-    .links {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-
-    }
+    
      
 
   }
