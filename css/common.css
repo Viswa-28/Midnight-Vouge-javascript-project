@@ -55,7 +55,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 30px;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     
 }
 
@@ -86,7 +86,8 @@ body {
   z-index: 10000;
   /* right: 0; */
   flex-direction: row;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  gap: 150px;
   align-items: center;
   padding: 20px 0;
   height: 80px;
@@ -496,6 +497,7 @@ footer .first-links p{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -570,6 +572,7 @@ footer .first-links p{
 
   .links li a {
     font-size: 12px;
+    text-align: center;
   }
 }
 
