@@ -430,6 +430,7 @@ p {
   margin-top: 100px;
   padding: 20px;
   background-color: rgb(97, 96, 96);
+  scroll-margin-top: 150px;
 }
 
 .tabs {
@@ -1314,7 +1315,7 @@ footer .first-links p{
     .accordian {
       height: auto !important;
       /* width: 90% */
-            margin: 60px,0;
+      margin-bottom: 50px;
 
     }
 
@@ -1338,7 +1339,7 @@ footer .first-links p{
     }
 
     .question {
-      width: 90% !important;
+      width: 100% !important;
     }
 
     .answer p {

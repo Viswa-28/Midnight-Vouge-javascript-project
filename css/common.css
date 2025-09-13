@@ -486,6 +486,17 @@ footer .first-links p{
     margin: 0 !important;
     display: block;
   }
+  .footer {
+   gap:20px;
+   flex-direction: row;  
+  }
+  footer .link-container{
+    width: 45%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .icon-container {
@@ -531,33 +542,7 @@ footer .first-links p{
 
 
 @media only screen and (max-width: 600px) {
-  .nav h2 {
-    font-size: 16px;
-    margin-left: 0;
-    width: 100%;
-  }
- .links.show {
-    display: flex;
-    flex-direction: column;
-    transform: translateY(0);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    background-color: black;
-    transition-duration: 0.7s;
-
-  }
-  .banner img {
-    width: 100%;
-    height: 300px;
-    max-width: 400px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(124, 60, 173, 0.5);
-    object-fit: cover;
-    transition: all 0.3s ease;
-    object-position: center;
+    .banner img {object-position: center;
   }
 
   .links li a {
@@ -568,11 +553,13 @@ footer .first-links p{
     flex-direction: column;
     text-align: center;
     gap: 30px;
+    align-items: center;
   }
 
   .footer .fourth-links ul {
     justify-content: center;
   }
+  
 }
 
 @media only screen and (max-width: 400px) {
